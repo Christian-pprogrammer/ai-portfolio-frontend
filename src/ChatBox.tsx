@@ -446,7 +446,7 @@ export default function Portfolio() {
                   disabled={isLoading || !input.trim()}
                 >
                   <Send className="w-4 h-4" />
-                  Send
+                  <span className="hidden sm:inline-block">Send</span>
                 </button>
               </div>
             </div>
