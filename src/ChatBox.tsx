@@ -203,10 +203,10 @@ export default function Portfolio() {
             <div className="flex-1 space-y-8">
               <div className="space-y-4">
                 <div className="inline-block px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">
-                  👋 Available for opportunities
+                 Available for opportunities
                 </div>
-                <h1 className="text-6xl font-bold text-slate-900 leading-tight">
-                  Hi, I'm <span className="text-slate-700">Chris</span>
+                <h1 className="text-4xl font-bold text-slate-900 leading-tight">
+                  Hi, I'm <span className="text-slate-700">Christian MPANO (Chris)</span>
                 </h1>
                 <p className="text-xl text-slate-600 leading-relaxed">
                   Full-Stack Developer specializing in AI-powered solutions. I build scalable applications with modern technologies, from intelligent chatbots to enterprise-grade systems. Passionate about clean code, user experience, and turning complex problems into elegant solutions.
@@ -230,19 +230,19 @@ export default function Portfolio() {
                   className="px-8 py-4 bg-white text-slate-800 border-2 border-slate-800 rounded-lg font-semibold hover:bg-slate-800 hover:text-white transition-all duration-200 flex items-center gap-3 shadow-lg hover:shadow-xl hover:scale-105 active:scale-95"
                 >
                   <MessageSquare className="w-5 h-5" />
-                  Chat with AI
+                  Chat with Chris AI
                 </button>
               </div>
 
               {/* Social Links */}
               <div className="flex gap-4 pt-4">
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-slate-100 hover:bg-slate-800 text-slate-700 hover:text-white rounded-lg flex items-center justify-center transition-all duration-200 hover:scale-110">
+                <a href="https://www.linkedin.com/in/christian-mpano-539608255/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-slate-100 hover:bg-slate-800 text-slate-700 hover:text-white rounded-lg flex items-center justify-center transition-all duration-200 hover:scale-110">
                   <Linkedin className="w-5 h-5" />
                 </a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-slate-100 hover:bg-slate-800 text-slate-700 hover:text-white rounded-lg flex items-center justify-center transition-all duration-200 hover:scale-110">
+                <a href="https://github.com/Christian-pprogrammer" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-slate-100 hover:bg-slate-800 text-slate-700 hover:text-white rounded-lg flex items-center justify-center transition-all duration-200 hover:scale-110">
                   <Github className="w-5 h-5" />
                 </a>
-                <a href="mailto:chris@example.com" className="w-12 h-12 bg-slate-100 hover:bg-slate-800 text-slate-700 hover:text-white rounded-lg flex items-center justify-center transition-all duration-200 hover:scale-110">
+                <a href="mailto:mpanoc6@gmail.com" className="w-12 h-12 bg-slate-100 hover:bg-slate-800 text-slate-700 hover:text-white rounded-lg flex items-center justify-center transition-all duration-200 hover:scale-110">
                   <Mail className="w-5 h-5" />
                 </a>
               </div>
