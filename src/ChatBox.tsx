@@ -217,8 +217,8 @@ export default function Portfolio() {
               <div className="flex flex-wrap gap-4 pt-4">
               <a
                 // href="https://docs.google.com/document/d/1RFsh3T5UCimxfNRqf4YNnXd0vjLTP8xC/export?format=pdf"
-                href="#"
-                target="_blank"
+                href="/resume.pdf"
+                // target="_blank"
                 rel="noopener noreferrer"
                 className="group px-8 py-4 bg-slate-800 text-white rounded-lg font-semibold hover:bg-slate-900 transition-all duration-200 flex items-center gap-3 shadow-lg hover:shadow-xl hover:scale-105 active:scale-95"
               >
