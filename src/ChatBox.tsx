@@ -54,7 +54,7 @@ export default function Portfolio() {
     setMessages(prev => [...prev, { sender: "bot", text: "", isStreaming: true }]);
   
     try {
-      const base_url = process.env.REACT_APP_BASE_URL || 'http://localhost:8000';
+      const base_url = process.env.REACT_APP_BASE_URL || 'https://ai-portfolio-backend-smoky.vercel.app';
   
       const response = await fetch(`${base_url}/api/chat/stream/`, {
         method: 'POST',
