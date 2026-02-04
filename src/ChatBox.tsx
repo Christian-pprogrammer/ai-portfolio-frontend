@@ -28,6 +28,8 @@ export default function Portfolio() {
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
+  const accumulatedTextRef = useRef('');
+  
   // Contact form state
   const [contactForm, setContactForm] = useState({
     name: "",
@@ -75,7 +77,7 @@ export default function Portfolio() {
         throw new Error('No reader available');
       }
   
-      let accumulatedText = '';
+      accumulatedTextRef.current = '';
   
       while (true) {
         const { done, value } = await reader.read();
@@ -100,13 +102,18 @@ export default function Portfolio() {
                 return newMessages;
               });
             } else if (data.content) {
-              accumulatedText += data.content;
+              accumulatedTextRef.current += data.content;
+
               setMessages(prev => {
                 const newMessages = [...prev];
                 const lastMessage = newMessages[newMessages.length - 1];
-                if (lastMessage.sender === "bot") lastMessage.text = accumulatedText;
+                if (lastMessage.sender === "bot") {
+                  lastMessage.text = accumulatedTextRef.current;
+                }
                 return newMessages;
               });
+
+
             }
           }
         }
@@ -140,10 +147,6 @@ export default function Portfolio() {
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
-
-  const handleDownloadResume = () => {
-    window.open("/resume.pdf", "_blank");
-  };
 
   const handleContactSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
